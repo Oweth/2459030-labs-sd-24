@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Design Website</title>
+    <style>
+       
+   
+
+     
+    
+
+       
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background-color: black;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: white; /* Updated text color of h1 to white */
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+
+        .about-us{
+            align-items: center;
+            text-align: center;
+        }
+        .our-services{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .something{
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h3>Welcome to Software Design Website</h3>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <figure > 
+                <h1>About us</h1>       
+                <figcaption>We are a company dedicated to providing excellent services to our customers.</figcaption>
+                <img src="https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1708732800&semt=ais" width="600" height="400">
+            </figure>
+        </section>
+        <h1 class="something">Our services</h1>
+        <section class="our-services">
+            
+                
+                <figure> 
+                    
+                    <h1>Web Development</h1>       
+                    <figcaption>We specialize in creating responsive and user-friendly websites.</figcaption>
+                    <img src="data:image/png;base64,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" width="600" height="400">
+                </figure>
+        
+                <figure> 
+                    <h1>Graphic design</h1>       
+                    <figcaption>Our talented designers can bring your ideas to life with stunning visuals.</figcaption>
+                    <img src="https://img.freepik.com/free-vector/design-tools-concept-illustration_114360-1227.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1708214400&semt=ais" width="600" height="400">
+                </figure>
+            
+        </section>
+
+        
+    </main>
+
+    <footer>
+        @2024 The Owethu Company. All rights reserved.
+    </footer>
+</body>
+
+</html>
